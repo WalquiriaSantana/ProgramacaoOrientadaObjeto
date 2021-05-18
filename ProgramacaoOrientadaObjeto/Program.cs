@@ -1,5 +1,6 @@
 ﻿using ProgramacaoOrientadaObjetos;
 using ProgramacaoOrientadaObjetos.Basico;
+using ProgramacaoOrientadaObjetos.OOP;
 using System;
 using System.Globalization;
 
@@ -12,7 +13,7 @@ namespace ProgramacaoOrientadaObjetos
 
         static void Main(string[] args)
         {
-
+            Encapsulamento();
         }
 
         /// <summary>
@@ -88,6 +89,17 @@ namespace ProgramacaoOrientadaObjetos
             Console.WriteLine();
             Console.WriteLine("Dados atualizados: " + p);
         }
+
+        public static void Encapsulamento()
+        {
+            Encapsulamento p = new Encapsulamento("TV", 500.00, 10);
+
+            p.SetNome("TV 4K");
+
+            Console.WriteLine(p.GetNome());
+            Console.WriteLine(p.GetPreco());
+        }
+
     }
 }
 
