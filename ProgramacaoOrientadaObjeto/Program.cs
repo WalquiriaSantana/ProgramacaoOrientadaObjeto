@@ -10,10 +10,9 @@ namespace ProgramacaoOrientadaObjetos
     {
 
 
-
         static void Main(string[] args)
         {
-            Encapsulamento();
+            Propriedades();
         }
 
         /// <summary>
@@ -100,6 +99,23 @@ namespace ProgramacaoOrientadaObjetos
             Console.WriteLine(p.GetPreco());
         }
 
+
+        /// <summary>
+        /// Propriedades são definições de métodos encapsulados. porém expondo
+        /// uma sintaxe similar à de atributos. Podem ser usadas como se fossem atributos
+        /// públicos, mas na verdade são métodos especiais chamados acessadores.
+        /// sintaxe de atributos com todas os recursos dos métodos.
+        /// </summary>
+        public static void Propriedades()
+        {
+            Propriedades p = new Propriedades("TV", 500.00, 10);
+
+            p.Nome = "TV 4K";
+
+            Console.WriteLine(p.Nome);
+            Console.WriteLine(p.Preco);
+
+        }
     }
 }
 
